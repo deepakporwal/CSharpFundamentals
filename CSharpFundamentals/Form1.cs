@@ -45,8 +45,11 @@ namespace CSharpFundamentals
                 k = i ?? 25;    // if i is null then show right hand value else show I variable value
                 textBox2.Text += ", (??) Null coalescing : " + k.ToString();
 
+                // is to check datatpye and as to cast data type
+                bool result = false;
+                result = j is int;
 
-
+                
 
             }
             catch (Exception ex)
