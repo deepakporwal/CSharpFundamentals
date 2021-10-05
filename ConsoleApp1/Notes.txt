@@ -17,3 +17,24 @@ protected: The type or member can be accessed only by code in the same class, or
 internal: The type or member can be accessed by any code in the same assembly, but not from another assembly.
 protected internal: The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived class in another assembly.
 private protected: The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
+
+OOPs, provide 4 principles. They are
+
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+
+What are Abstraction and Encapsulation?
+
+The process of representing the essential features without including the background details is called Abstraction.
+In simple words, we can say that it is a process of defining a class by providing necessary details to call the object 
+operations (i.e. methods) by hiding or removing its implementation details.
+
+The process of binding the data and functions together into a single unit (i.e. class) is called Encapsulation. 
+In simple words, we can say that it is a process of creating a class by hiding its internal data members from
+outside the class and accessing those internal data members only through publicly exposed methods or properties.
+Data encapsulation is also called data hiding because by using this principle we can hide the internal data from outside the class.
+
+Abstraction and Encapsulation are related to each other. 
+We can say that Abstraction is logical thinking whereas Encapsulation is its physical implementation.
