@@ -49,7 +49,8 @@ namespace CSharpFundamentals
                 bool result = false;
                 result = j is int;
 
-                
+                // call while loop
+                calcualtor.WhileLoopEx();
 
             }
             catch (Exception ex)
