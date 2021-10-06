@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.interfaces;
 using System;
+using Newtonsoft.Json;
 
 namespace ConsoleApp1
 {
@@ -22,6 +23,27 @@ namespace ConsoleApp1
             Console.WriteLine(simplobj.Sum(1.23, 2.34));
             Console.WriteLine(simplobj.Sum(1, 2));
             Console.WriteLine(simplobj.Sum(1, 2,3));
+
+            // inheritance example when base class method is virtual
+            Employee objemp = new Employee();
+            objemp.FirstName = "deepak";
+            objemp.LastName = "porwal";
+            string fullName = objemp.GetFullName();
+            objemp.Salary = 100000;
+
+            Console.WriteLine(JsonConvert.SerializeObject(objemp));
+            Console.WriteLine(objemp.GetFullName());
+
+            // inheritance example when base class method is abstract
+            Employee2 objemp2 = new Employee2();
+            objemp2.FirstName = "deepak";
+            objemp2.LastName = "porwal";
+            string fullName2 = objemp2.GetFullName();
+            objemp2.Salary = 100000;
+
+            Console.WriteLine(JsonConvert.SerializeObject(objemp2));
+            Console.WriteLine(objemp2.GetFullName());
+
             Console.ReadLine();
         }
     }
