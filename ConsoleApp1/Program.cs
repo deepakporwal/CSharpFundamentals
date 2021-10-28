@@ -1,6 +1,9 @@
 ﻿using ConsoleApp1.interfaces;
 using System;
 using Newtonsoft.Json;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -44,7 +47,33 @@ namespace ConsoleApp1
             Console.WriteLine(JsonConvert.SerializeObject(objemp2));
             Console.WriteLine(objemp2.GetFullName());
 
+            ArrayList myArr = new ArrayList();
+            myArr.Add(1);
+            myArr.Add(2);
+            myArr.Add("deepak");
+
+            // generic list is strongly typed and flexible , perfomance faster than array list
+            List<int> genList = new List<int>(); 
+            genList.Add(10);
+
+            // TPL = Task parallel library --- utilizes the CPU processor properly.
+            Task t = new Task(Method1);
+            t.Start();
+
+            Task t1 = new Task(Method2);
+            t1.Start();
+
             Console.ReadLine();
+        }
+
+        static void Method1() 
+        {
+        
+        }
+
+        static void Method2() 
+        {
+        
         }
     }
 }
